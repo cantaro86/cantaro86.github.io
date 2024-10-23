@@ -1,1 +1,225 @@
-First website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Website with my resume">
+    <meta name="author" content="cantaro86">
+    <title>Nicola Cantarutti - Personal website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 14px;
+        }
+        header {
+            background-color: #5395d7; /* Lighter blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header img {
+            border-radius: 50%;
+            width: 220px;
+            height: 220px;
+            margin-right: 50px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #5395d7;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #5395d7;
+            color: white;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="images/profile1.jpg" alt="Nicola Cantarutti">
+        <div>
+            <h1>Nicola Cantarutti</h1>
+            <p>Mathematician | Software Developer | Quantitative Researcher | Data scientist </p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! <br> 
+            I'm a researcher and scientific software developer with a background in applied mathematics and quantitative finance. <br>
+            I'm a very curious person and a critical thinker. I like to work on unsolved problems and 
+            challenging projects where my ideas can be relevant. 
+        </p>
+        <p>
+            I'm a crypto enthusiast! I am passionate about crypto-trading and DeFi. 
+            I have also collaborated with a <a href="#defi">DeFi project</a>
+        </p>
+
+        <p>
+            In the last few years I have been working on software projects in python and C++. 
+            I also have experience in data analysis and data science.
+        </p>
+
+        <p>
+            In my spare time, I like sports, in particular football and swimming.   
+            I'm a big fan of 
+            <a href="www.inter.it" target="_blank">Inter Milan</a>. <br>
+            I like cooking, and I listen to a lot of music.  
+            I like psychological/strategic games and card games such as Poker and Magic the Gathering. <br>
+            I love traveling and visiting new cities and natural attractions.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>My projects</h2>
+        <ul>
+            <li> <p>  
+                Github repository of <a href=https://github.com/cantaro86/Financial-Models-Numerical-Methods> jupyter notebooks</a> 
+                on quantitative finance (more than 5K stars) containing:
+                <ul>
+                    <li> Stochastic processes, with main focus on Lévy processes </li>
+                    <li> Numerical methods for option pricing </li>
+                    <li> Exotic options, incomplete markets </li>
+                    <li> Partial integro-differential equations </li>
+                    <li> Statistics, parameter estimation, data analysis </li>
+                    <li> Kalman filter applied to finance </li>
+                    <li> Code optimtimization, Python, Cython</li>
+                </ul>
+            </p> </li>
+
+            <li> <p>
+                Github repository of <a href=https://github.com/cantaro86/math-notebooks> jupyter notebooks</a> 
+                containing all the mathematics that I found interesting, or that I used in the past.
+            </p></li>
+
+            <li> <p>
+                Python package for blood-flow simulation: <a href=https://github.com/BlueBrain/AstroVascPy>Astrovascpy</a>.<br>
+                I formulated and implemented a model based on fluid dynamics, graph theory, 
+                and stochastic calculus, for blood flow dynamics. 
+                I am one of the main maintainer of the package it in Python 
+                using MPI and PETSc for parallelization. 
+            </p></li>
+
+            <li> <p id="defi">
+                DeFi: I implemented an AMM stable-swap model used by <a href=https://shadeprotocol.io>Shade Protocol</a>.
+            </p></li>
+        <ul>  
+    </section>
+
+  
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Ph.D. in Applied Mathematics</strong>, (2020) <br> 
+                <a href=https://cemapre.iseg.ulisboa.pt>CEMAPRE</a> - ISEG - University of Lisbon, Portugal. Marie Curie European Scholarship. <br>
+                Approved with Distinction cum Laude. <br>
+                Thesis title: <a href=https://github.com/cantaro86/PhD-Thesis>Option pricing in exponential Lévy models with transaction costs</a>. 
+            </li>
+            <li><strong>MSc in Theoretical Physics</strong>, (2012), University of Trieste, Italy. <br>
+                Thesis title: Radiative cooling of gas in cosmological haloes.
+            </li>
+            <li><strong>BSc in Physics</strong>, (2009), University of Trieste, Italy. <br>
+                Thesis title: Introduction to Lie's groups and su(3).
+            </li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>List of publications</h2>
+            <p>Modulation of blood flow by astrocytic activity. Under review.</p>
+            <p> <a href=https://arxiv.org/abs/2302.07822>Silkswap: an asymmetric automated market maker model for stablecoins</a> 
+                Shade AMM Whitepaper, 2022. </p>
+            <p> <a href=https://www.frontiersin.org/articles/10.3389/fninf.2022.883742/full> 
+                STEPS 4.0: Fast and memory-efficient molecular simulations of neurons at the nanoscale</a>. 
+                "Frontiers in Neuroinformatics", Volume 16, 2022.</p>
+            <p> <a href=https://www.risk.net/journal-of-computational-finance/7533951/option-pricing-in-exponential-levy-models-with-transaction-costs>
+                Option pricing in exponential Lévy models with transaction costs.</a> 
+                "Journal of Computational Finance", April 2020. Volume 23. Num. 5, pages 1--31. </p>
+            <p> <a href=https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3579408>
+                Numerical Study of the Merton PIDE in Option Pricing.</a> SSRN, 2020. </p>
+            <p> <a href=https://doi.org/10.1080/00207160.2018.1427853>
+                Multinomial method for option pricing under Variance Gamma.</a> "International Journal of Computer Mathematics", 
+                2019. Volume 96, pages 1087--1106. </p>
+            <p> <a href=https://www.springer.com/de/book/9783319612812?wt_mc=Internal.Event.1.SEM.ChapterAuthorCongrat>
+                Indifference pricing in a market with transaction costs and jumps.</a> 
+                Chapter 3 in the book "Novel Methods in Computational Finance" -- Springer 2017. </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <p> <strong>Phd courses:</strong>  advanced statistics, stochastic calculus, analysis and optimization,  
+            stochastic control theory, Lévy processes, numerical methods for finance.</p>
+        <p> <strong>Programming:</strong>
+            Python,  
+            pytest, tox, packaging, web scraping, sphynx, 
+            numpy, scipy, pandas, scikit-learn, cvxpy, mpi4py, petsc4py. <br>
+            C, Modern C++, CMake, CTest, Cython <br>
+            CI/CD: GitHub-actions, Gitlab. <br>
+            Slurm, Docker, Git. Linux, VSCode, Emacs, Vim, LaTeX, SQL and Tableau.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Nicola Cantarutti</p>
+        <div class="social-icons">
+            <a href="mailto:nicolacantarutti@gmail.com"><img src="images/email.jpg" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/nicolacantarutti" target="_blank"><img src="images/LI-In-Bug.png" alt="LinkedIn"></a>
+            <a href="https://github.com/cantaro86" target="_blank"><img src="images/github-6980894_960_720.webp" alt="GitHub"></a>
+            <a href="https://github.com/nico-canta" target="_blank"><img src="images/github-mark.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/nico_canta86" target="_blank"><img src="images/Instagram_logo_2016.webp" alt="Instagram"></a>
+            <a href="https://www.researchgate.net/profile/Nicola-Cantarutti" target="_blank"><img src="images/ResearchGate_icon_SVG.svg.png" alt="ResearchGate"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
